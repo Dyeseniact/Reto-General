@@ -61,7 +61,7 @@
 }
 .home-h1{
     font-family: vesterbroextrabold,Arial,sans-serif;
-    font-weight: 400!important;
+    font-weight: 400;
     line-height: 63px;
     font-size: 68px;
     text-align: left;
@@ -267,5 +267,221 @@ h3{
     font-size: 15px;
 }
 .suscribe-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.section-subscribe-text h4{
+    color: #025157;
 
 }
+.section-subscribe-lists{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:30px;
+ 
+}
+.section-subscribe-lists li{
+    padding: 10px;
+    text-decoration: none;
+}
+.section-subscribe-lists ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    color:#025157 ;
+}
+.section-subscribe-lists a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.footer{
+   width: 100%;
+   display:grid ;
+    grid-template: repeat(1, 100px) / repeat(2, 1fr);
+}
+.redes-sociales{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    
+   
+}
+.redes-sociales a{
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    color: blue;
+}
+.copy{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    padding-right: 20px;
+     
+}
+@media (max-width: 575px) {
+    body {
+      background-color: rgb(226, 234, 238);
+      
+       }
+       .navbar,
+       .actions {
+           display: none;
+       }
+       .home-section{
+        flex-direction: column;
+           /*flex-wrap: wrap;*/
+           width: auto;
+           height: auto;
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-bottom: 20px;
+          margin-top: 5px;
+           
+       }
+       .home-article{
+           width: auto;
+           height: auto;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           justify-items: center;
+           margin-bottom: 20px;
+       }
+       .home-h1{
+           text-align: center;
+           line-height: 32px;
+           font-size: 30px;
+           letter-spacing: -2px;
+           
+       }
+       .p-blog{
+           text-align: left;
+       }
+       .home-article2{
+           width: auto;
+           height: auto;
+           display: flex;
+           flex-direction: column;
+           margin-top: 50px;
+       }
+       .home-article2 iframe{
+           width: 300px;
+           height: 300px;
+       }
+       .logos-section-2{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+         
+       }
+       .logos-section{
+           margin-top: 10px;
+           text-align: center;
+       }
+       .logos-section-2 img{
+        width:25px;
+        height: 30px;
+        
+       }
+       .top-section-art{
+           flex-direction: column;
+       }
+       .tools-section-art{
+           flex-direction: column;
+       }
+       .article-tools{
+           width: auto;
+       }
+       .top-section-h1{
+           width: auto;
+           text-align: center;
+       }
+       .growing-section{
+           flex-direction: column;
+           width: auto;
+           
+       }
+       .growing-article-img img{
+           width: 300px;
+           height: auto;
+       }
+       .growing-article-text{
+           text-align: center;
+           width: auto;
+       }
+       .feature-section{
+           
+           display: grid;
+           margin-top: 400px;
+           grid-template: repeat(2, 150px) / repeat(2, 1fr);
+
+       }
+       .feature-article{
+        height: 100px;
+        width: auto;
+       }
+       .get-started-section{
+           width: auto;
+           height: auto;
+           flex-direction: column;
+           justify-content: flex-start;
+           
+           
+       }
+       .get-started-section article{
+           
+           padding: 10px;
+       }
+       .get-started-section h2{
+           font-size: 20px;
+           width: auto;
+       }
+       .suscribe-section{
+           
+           flex-direction: column;
+           
+       }
+       .section-subscribe-text{
+           display: flex;
+           width: auto;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: center;
+       
+       }
+       .section-subscribe-lists{
+        display: grid;
+        margin-top: 20px;
+        grid-template: repeat(2, 120px) / repeat(3, 100px);
+        width: auto;
+       }
+       .boton2{
+           margin-top: 5px;
+       }
+       .footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+       }     
+      
+       .redes-sociales a{
+           margin: 3px;
+       }
+       
+  }
